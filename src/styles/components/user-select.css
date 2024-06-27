@@ -1,0 +1,48 @@
+.container {
+    max-width: 320px;
+    margin: auto;
+    margin-top: 12px;
+}
+.user-select {
+    position: relative;
+}
+.user-select > img {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    object-fit: cover;
+}
+.user-select > .material-input {
+    padding-left: 42px;
+}
+.user-select > .results {
+    position: absolute;
+    width: 100%;
+    margin-top: 8px;
+    background-color: #fff;
+    box-shadow: 0 3px 2px 1px #0004;
+    display: none;
+    flex-flow: column;
+    gap: 8px;
+    z-index: 5;
+}
+.user-select > .results > div {
+    display: flex;
+    gap: 5px;
+    user-select: none;
+    cursor: pointer;
+    padding: 8px;
+    align-items: center;
+}
+.user-select > .results > div > img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.user-select > .results > div > span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-secondary);
+}

@@ -1,0 +1,14 @@
+.material-input {
+    width: 100%;
+    outline: none;
+    height: 42px;
+    border: 2px solid var(--color-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-dark);
+    padding-inline: 8px;
+}
+
+.material-input:focus {
+    border-color: var(--color-primary);
+}

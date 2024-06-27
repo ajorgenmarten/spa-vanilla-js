@@ -1,0 +1,46 @@
+.material-button {
+    position: relative;
+    border: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-inline: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--color-primary);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow .05s ease-in-out, scale .1s ease-in-out;
+}
+.material-button:active {
+    scale: .99;
+}
+@media screen and (orientation: landscape) {
+    .material-button:hover {
+        filter: brightness(.9);
+    }
+}
+.material-button .ripple {
+    position: absolute;
+    background-color: white;
+    opacity: .6;
+    border-radius: 100%;
+    animation-name: ripple;
+    animation-duration: .5s;
+}
+
+@keyframes ripple {
+    from {
+        width: 4px;
+        height: 4px;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        width: 80px;
+        height: 80px;
+        transform: translateX(-40px) translateY(-40px);
+    }
+}

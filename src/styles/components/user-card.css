@@ -1,0 +1,28 @@
+.user-card {
+    display: flex;
+    gap: 15px;
+}
+
+.user-card > img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.user-card > div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.user-card > div > span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.user-card > div > div {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    height: 100%;
+}
